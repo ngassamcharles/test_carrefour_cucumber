@@ -28,8 +28,8 @@ public class HomePage {
         PageFactory.initElements(driver,this);
     }
 
-    public void goToUrl(){
-        this.driver.get("https://www.carrefour.fr/");
+    public void goToUrl(String url){
+        this.driver.get(url);
     }
 
     public void search(String word){
@@ -39,7 +39,7 @@ public class HomePage {
 
     public void selectProduct(){
         this.product.click();
-    }
+          }
 
     public boolean isImageDisplayed(){
         return this.image.isDisplayed();

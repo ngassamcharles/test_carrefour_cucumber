@@ -5,7 +5,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = {"tests.stepdefs"}
+        glue = {"tests.stepdefs.SearchSteps"}
        )
 public class TestRunner extends AbstractTestNGCucumberTests{
 
